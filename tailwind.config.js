@@ -13,12 +13,14 @@ module.exports = {
   theme: {
     fontFamily: {
       raleway: ["Raleway", "sans-serif"],
+      dancingScript: ["DancingScript", "serif"],
     },
     extend: {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "profile-img": "url('../../public/portfolioImg.png')",
       },
     },
   },

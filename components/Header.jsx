@@ -14,8 +14,8 @@ export default function Header() {
     }
   };
   return (
-    <header className="fixed left-0 right-0 top-0 w-full bg-slate-50 ">
-      <nav className="relative z-10  mx-auto flex max-w-full justify-between px-4 py-5 sm:max-w-[85%] ">
+    <header className="fixed left-0 right-0 top-2 w-full bg-slate-50 ">
+      <nav className="relative z-10 mx-auto flex max-w-full justify-between rounded-full bg-slate-100 px-12 py-4 sm:max-w-[90%] ">
         {/* brand logo and desktop nav*/}
         <div className="flex items-center space-x-12 ">
           <Link href="#">
@@ -26,7 +26,7 @@ export default function Header() {
           <div
             className={`absolute right-0  ${
               toggle ? "opacity-1 top-16" : "-top-64"
-            }  h-64 w-full space-x-8 bg-slate-50 px-4 transition-all duration-150 ease-in sm:static sm:flex  sm:h-auto`}
+            }  h-64 w-full space-x-8 bg-slate-100 px-4 transition-all duration-150 ease-in sm:static sm:flex  sm:h-auto`}
           >
             <Link href="#">
               <h2 className="font-raleways text-sm font-semibold text-slate-800 antialiased ">
