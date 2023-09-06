@@ -24,8 +24,8 @@ export default function HeroSection(params) {
             </p>
           </div>
         </div>
-        <div>
-          <div className="mx-auto h-96 max-w-[55%] rounded-2xl bg-profile-img bg-center "></div>
+        <div className="order-first sm:order-last">
+          <div className="mx-auto h-96 max-w-[100%] rounded-2xl bg-profile-img bg-center sm:max-w-[55%] "></div>
           <p className="py-4  text-center font-dancingScript text-lg">
             Tunji hammed
           </p>

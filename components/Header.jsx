@@ -19,7 +19,7 @@ export default function Header() {
         {/* brand logo and desktop nav*/}
         <div className="flex items-center space-x-12 ">
           <Link href="#">
-            <h2 className="font-raleways text-xl  font-black text-slate-800 antialiased ">
+            <h2 className="font-dancingScript text-xl  font-black text-slate-800 antialiased ">
               tunji.dev
             </h2>
           </Link>
