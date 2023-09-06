@@ -1,17 +1,33 @@
+"use client";
 import Link from "next/link";
+import { HiOutlineMenuAlt3 } from "react-icons/hi";
+import { LiaTimesSolid } from "react-icons/lia";
+import { useState } from "react";
 
 export default function Header() {
+  const [toggle, setToggle] = useState(false);
+  const openMenu = () => {
+    if (toggle) {
+      setToggle(false);
+    } else {
+      setToggle(true);
+    }
+  };
   return (
     <header className="fixed left-0 right-0 top-0 w-full bg-slate-50 ">
-      <nav className="container mx-auto py-5 ">
-        {/* brand logo */}
+      <nav className="relative z-10  mx-auto flex max-w-full justify-between px-4 py-5 sm:max-w-[85%] ">
+        {/* brand logo and desktop nav*/}
         <div className="flex items-center space-x-12 ">
           <Link href="#">
             <h2 className="font-raleways text-xl  font-black text-slate-800 antialiased ">
               tunji.dev
             </h2>
           </Link>
-          <div className="flex space-x-8">
+          <div
+            className={`absolute right-0  ${
+              toggle ? "opacity-1 top-16" : "-top-64"
+            }  h-64 w-full space-x-8 bg-slate-50 px-4 transition-all duration-150 ease-in sm:static sm:flex  sm:h-auto`}
+          >
             <Link href="#">
               <h2 className="font-raleways text-sm font-semibold text-slate-800 antialiased ">
                 Expertise
@@ -28,6 +44,15 @@ export default function Header() {
               </h2>
             </Link>
           </div>
+        </div>
+        {/* brand logo and mobile nav*/}
+
+        <div className="block sm:hidden ">
+          {!toggle ? (
+            <HiOutlineMenuAlt3 onClick={openMenu} className="text-xl" />
+          ) : (
+            <LiaTimesSolid onClick={openMenu} className="text-xl" />
+          )}
         </div>
       </nav>
     </header>

@@ -1,9 +1,10 @@
 import Image from "next/image";
+import { HeroSection } from "@/components/index";
 
 export default function Home() {
   return (
-    <h1 className="m-6 mt-2 bg-slate-50 p-4 font-extrabold antialiased lg:flex ">
-      Hello Folks
-    </h1>
+    <div className="bg-slate-50 ">
+      <HeroSection />
+    </div>
   );
 }
