@@ -1,10 +1,13 @@
 import Image from "next/image";
-import { HeroSection } from "@/components/index";
+import { HeroSection, Expertise } from "@/components/index";
 
 export default function Home() {
   return (
-    <div className="bg-slate-50 ">
-      <HeroSection />
+    <div className="">
+      <div className="bg-slate-50">
+        <HeroSection />
+      </div>
+      <Expertise />
     </div>
   );
 }
