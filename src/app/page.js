@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { HeroSection, Expertise, Work } from "@/components/index";
+import { HeroSection, Expertise, Work, Blog } from "@/components/index";
 
 export default function Home() {
   return (
@@ -10,6 +10,7 @@ export default function Home() {
       <Expertise />
       <div className="bg-slate-50">
         <Work />
+        <Blog />
       </div>
     </div>
   );
