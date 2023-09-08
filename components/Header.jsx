@@ -14,7 +14,7 @@ export default function Header() {
     }
   };
   return (
-    <header className="fixed left-0 right-0 top-2 w-full bg-slate-50 ">
+    <header className="fixed left-0 right-0 top-2 w-full ">
       <nav className="relative z-10 mx-auto flex max-w-full justify-between rounded-full bg-slate-100 px-12 py-4 sm:max-w-[90%] ">
         {/* brand logo and desktop nav*/}
         <div className="flex items-center space-x-12 ">
