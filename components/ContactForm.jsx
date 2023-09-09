@@ -3,7 +3,7 @@ import { CgArrowLongRight } from "react-icons/cg";
 export default function ContactForm() {
   return (
     <form action="">
-      <div className="block space-y-8 sm:flex sm:space-x-4">
+      <div className="block space-y-8 sm:flex sm:space-x-4 sm:space-y-0">
         <div className=" w-full ">
           <label className="font-raleway font-medium text-slate-600 ">
             Your Name:
@@ -24,7 +24,8 @@ export default function ContactForm() {
           <input
             type="text"
             name="first"
-            className="w-full border border-transparent border-b-slate-800 bg-slate-50 px-0 py-4 font-raleway  focus:outline-none "
+            className="w-full border border-transparent border-b-slate-800 bg-slate-50 
+             px-0 py-4 font-raleway  focus:outline-none "
           />
         </div>
       </div>
@@ -37,10 +38,10 @@ export default function ContactForm() {
         <textarea
           type="text"
           name="first"
-          className="w-full border border-transparent border-b-slate-800 bg-slate-50 px-0 py-2 font-raleway  focus:outline-none "
+          className="w-full border border-transparent 
+          border-b-slate-800 bg-slate-50 px-0 py-2 font-raleway  focus:outline-none "
         />
       </div>
-
       <button
         type="button"
         className="mt-12 flex items-center space-x-12 bg-white px-6 py-4 font-raleway font-medium text-slate-800"
