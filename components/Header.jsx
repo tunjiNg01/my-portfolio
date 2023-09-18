@@ -3,6 +3,7 @@ import Link from "next/link";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import { LiaTimesSolid } from "react-icons/lia";
 import { useState } from "react";
+import { routes } from "../path";
 
 export default function Header() {
   const [toggle, setToggle] = useState(false);
@@ -18,7 +19,7 @@ export default function Header() {
       <nav className="relative z-10 mx-auto flex max-w-full justify-between rounded-full bg-slate-100 px-12 py-4 sm:max-w-[90%] ">
         {/* brand logo and desktop nav*/}
         <div className="flex items-center space-x-12 ">
-          <Link href="#">
+          <Link href="./">
             <h2 className="font-dancingScript text-xl  font-black text-slate-800 antialiased ">
               tunji.dev
             </h2>
@@ -33,12 +34,12 @@ export default function Header() {
                 Expertise
               </h2>
             </Link>
-            <Link href="#">
+            <Link href={routes.work}>
               <h2 className="font-raleways text-sm font-semibold text-slate-800 antialiased ">
                 Work
               </h2>
             </Link>
-            <Link href="#">
+            <Link href={routes.blog}>
               <h2 className="font-raleways text-sm font-semibold text-slate-800 antialiased ">
                 Tips and Tricks
               </h2>

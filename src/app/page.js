@@ -19,7 +19,6 @@ export default function Home() {
         <Work />
         <Blog />
         <Contact />
-        <Footer />
       </div>
     </div>
   );
