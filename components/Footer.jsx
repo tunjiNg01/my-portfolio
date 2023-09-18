@@ -19,6 +19,9 @@ export default function Footer() {
 
         <div className=" mt-5 font-raleway text-sm underline sm:mt-0 sm:text-base">
           <Link href="#" target="_blank">
+            <p>Youtube</p>
+          </Link>
+          <Link href="#" target="_blank">
             <p> LinkedIn</p>
           </Link>
           <Link href="#" target="_blank">
