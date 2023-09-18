@@ -6,7 +6,7 @@ export default function WorkDetails() {
   return (
     <div>
       <PageTitles />
-      <div className="mx-auto max-w-full px-4 pb-28 pt-16 sm:max-w-[85%]  sm:pb-28  sm:pt-4 ">
+      <div className="mx-auto max-w-full px-4 pb-28 sm:max-w-[85%]  sm:pb-28  sm:pt-4 ">
         <div className="grid gap-8 sm:grid-cols-4">
           <div className="col-span-3 ">
             <Image src={placeholder} alt="product" />

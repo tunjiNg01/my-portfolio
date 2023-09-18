@@ -5,7 +5,7 @@ export default function work() {
     <div>
       <PageTitles />
 
-      <div className="bg-slate-50">
+      <div className="bg-slate-50 pt-8">
         <SelectedWorks />
         <Contact />
       </div>
