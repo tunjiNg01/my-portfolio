@@ -10,7 +10,7 @@ export default function PageTitles() {
             ./ Work
           </h1>
           <p className="text-center font-raleway text-base text-slate-600 ">
-            Selected work I&apos;ve taken on in the past.
+            Selected work I&lsquo;ve taken on in the past.
           </p>
         </div>
       </BoxUtility>
