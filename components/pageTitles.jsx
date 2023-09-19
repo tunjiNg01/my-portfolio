@@ -1,16 +1,16 @@
 import { BoxUtility } from ".";
 import { Contact } from ".";
 
-export default function PageTitles() {
+export default function PageTitles({ title, description }) {
   return (
     <div className="">
       <BoxUtility>
         <div className="space-y-4">
           <h1 className="pt-12 text-center font-raleway text-3xl font-extrabold text-slate-800 sm:text-4xl">
-            ./ Work
+            {title}
           </h1>
           <p className="text-center font-raleway text-base text-slate-600 ">
-            Selected work I&lsquo;ve taken on in the past.
+            {description}
           </p>
         </div>
       </BoxUtility>

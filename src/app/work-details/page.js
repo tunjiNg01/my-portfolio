@@ -5,7 +5,10 @@ import Image from "next/image";
 export default function WorkDetails() {
   return (
     <div>
-      <PageTitles />
+      <PageTitles
+        description=" Selected work I&lsquo;ve taken on in the past."
+        title="./App name"
+      />
       <div className="mx-auto max-w-full px-4 pb-28 sm:max-w-[85%]  sm:pb-28  sm:pt-4 ">
         <div className="grid gap-8 sm:grid-cols-4">
           <div className="col-span-3 ">

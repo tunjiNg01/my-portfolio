@@ -1,6 +1,6 @@
 export const routes = {
   work: "./work",
-  blog: "./tip-and-tricks",
+  blog: "./tips-and-tricks",
   resume: "./resume",
   workDetails: "./work-details",
 };

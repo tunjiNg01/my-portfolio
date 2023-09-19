@@ -11,3 +11,4 @@ export { default as ContactForm } from "./ContactForm";
 export { default as Footer } from "./Footer";
 export { default as PageTitles } from "./pageTitles";
 export { default as SelectedWorks } from "./selectedWorks";
+export { default as BlogPosts } from "./blogPost";
