@@ -1,6 +1,6 @@
 import { PageTitles, Contact, SelectedWorks } from "@/components/index";
 
-export default function work() {
+export default function WorkPage() {
   return (
     <div>
       <PageTitles />
