@@ -4,7 +4,6 @@ export default function WorkPage() {
   return (
     <div>
       <PageTitles />
-
       <div className="bg-slate-50 pt-8">
         <SelectedWorks />
         <Contact />
