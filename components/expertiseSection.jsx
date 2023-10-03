@@ -8,7 +8,8 @@ export default function Expertise() {
           Expertise
         </h1>
         <p className="mt-2 max-w-full font-raleway font-normal text-slate-700 sm:max-w-[30%] ">
-          Been a fullstack engineer I can in the following skillset
+          Been a fullstack engineer, my skillset cover the area of product
+          engineering.
         </p>
       </div>
       <div className="mt-16 grid grid-cols-1 divide-y-[1px] divide-dashed sm:grid-cols-3 sm:divide-x-[1px]  sm:divide-y-0">
@@ -27,6 +28,12 @@ export default function Expertise() {
             <p className="mt-2  rounded-full bg-slate-50 px-3 py-1 font-raleway text-xs font-semibold  text-slate-800 ">
               SwiftUI
             </p>
+            <p className="mt-2  rounded-full bg-slate-50 px-3 py-1 font-raleway text-xs font-semibold  text-slate-800 ">
+              Kotlin
+            </p>
+            <p className="mt-2  rounded-full bg-slate-50 px-3 py-1 font-raleway text-xs font-semibold  text-slate-800 ">
+              Jetpack compose
+            </p>
           </div>
         </div>
 
@@ -40,10 +47,13 @@ export default function Expertise() {
           </p>
           <div className="flex space-x-2 ">
             <p className="mt-2 rounded-full bg-slate-50 px-3 py-1 font-raleway text-xs font-semibold  text-slate-800 ">
-              Swift
+              Nextjs
             </p>
             <p className="mt-2  rounded-full bg-slate-50 px-3 py-1 font-raleway text-xs font-semibold  text-slate-800 ">
-              SwiftUI
+              React
+            </p>
+            <p className="mt-2  rounded-full bg-slate-50 px-3 py-1 font-raleway text-xs font-semibold  text-slate-800 ">
+              Tailwind Css
             </p>
           </div>
         </div>

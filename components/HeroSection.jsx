@@ -9,18 +9,19 @@ export default function HeroSection(params) {
             Fullstack software engineer
           </h1>
           <p className="max-w-full font-raleway font-medium text-slate-800 antialiased sm:max-w-[80%]">
-            I like to craft solid and scalable frontend products with great user
-            experiences.
+            I help businesses build a performant, scalable, and robust
+            application that helps them meet their client's needs and also helps
+            to achieve their business objective.
           </p>
 
           <div className="mt-12 grid  grid-cols-2 gap-4 divide-x-[1px] divide-dashed divide-slate-600 sm:mt-24">
             <p className="max-w-full font-raleway text-xs font-medium text-slate-800 antialiased sm:max-w-[80%] sm:text-sm">
-              I like to craft solid and scalable frontend products with great
-              user experiences.
+              I'm result oriented individual who has developed a mature and
+              responsible approach to any task that I undertake.
             </p>
-            <p className="max-w-full pl-4 font-raleway text-xs font-medium text-slate-800 antialiased sm:max-w-[90%] sm:pl-8 sm:text-sm">
-              I like to craft solid and scalable frontend products with great
-              user experiences.
+            <p className="max-w-full pl-4 font-raleway text-xs font-medium text-slate-800 antialiased sm:max-w-[90%] sm:pl-4 sm:text-sm">
+              I’m highly skilled in system design, design patterns, data
+              structure and algorithms, and general product engineering.
             </p>
           </div>
         </div>
