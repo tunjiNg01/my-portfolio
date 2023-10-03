@@ -55,6 +55,9 @@ export default function Expertise() {
             <p className="mt-2  rounded-full bg-slate-50 px-3 py-1 font-raleway text-xs font-semibold  text-slate-800 ">
               Tailwind Css
             </p>
+            <p className="mt-2  rounded-full bg-slate-50 px-3 py-1 font-raleway text-xs font-semibold  text-slate-800 ">
+              Tailwind Css
+            </p>
           </div>
         </div>
 
