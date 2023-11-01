@@ -21,7 +21,7 @@ export default function Header() {
         <div className="flex items-center space-x-12 ">
           <Link href="./">
             <h2 className="font-dancingScript text-xl  font-black text-slate-800 antialiased ">
-              tunji.dev
+              tunji.Dev
             </h2>
           </Link>
           <div
