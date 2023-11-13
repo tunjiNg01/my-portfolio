@@ -1,57 +1,53 @@
+"use client";
 import { CgArrowLongRight } from "react-icons/cg";
-
+import { FormProvider, TextField, TextArea } from "./forms";
+import * as Yup from "yup";
+import { yupResolver } from "@hookform/resolvers/yup";
+import { useForm } from "react-hook-form";
 export default function ContactForm() {
+  const contactSchema = Yup.object().shape({
+    name: Yup.string().required("required"),
+    email: Yup.string().required("required"),
+    message: Yup.string().required("required"),
+  });
+
+  const defaultValues = {
+    name: "",
+    email: "",
+    message: "",
+  };
+
+  const methods = useForm({
+    resolver: yupResolver(contactSchema),
+    defaultValues,
+  });
+
+  const {
+    reset,
+    setError,
+    handleSubmit,
+    formState: { errors, isSubmitting, isSubmitSuccessful },
+  } = methods;
+  const onSubmit = async (data) => {
+    console.log(data);
+  };
   return (
-    <form action="">
+    <FormProvider methods={methods} onSubmit={handleSubmit(onSubmit)}>
       <div className="space-y-8 ">
         <div className="block space-y-8 sm:flex sm:space-x-4 sm:space-y-0">
-          <div className=" w-full ">
-            <label className="font-raleway font-medium text-slate-600 ">
-              Your Name:
-            </label>
-            <br></br>
-            <input
-              type="text"
-              name="first"
-              className="w-full border border-transparent border-b-slate-800 bg-slate-50 px-0 py-4 font-raleway  focus:outline-none "
-            />
-          </div>
-
-          <div className=" w-full ">
-            <label className="font-raleway font-medium text-slate-600">
-              Email Address:
-            </label>
-            <br></br>
-            <input
-              type="text"
-              name="first"
-              className="w-full border border-transparent border-b-slate-800 bg-slate-50 
-             px-0 py-4 font-raleway  focus:outline-none "
-            />
-          </div>
+          <TextField name="name" label="Your Name:" />
+          <TextField name="email" label="Email:" />
         </div>
-
-        <div className=" w-full ">
-          <label className="font-raleway font-medium text-slate-600">
-            Your message:
-          </label>
-          <br></br>
-          <textarea
-            type="text"
-            name="first"
-            className="w-full border border-transparent 
-          border-b-slate-800 bg-slate-50 px-0 py-2 font-raleway  focus:outline-none "
-          />
-        </div>
+        <TextArea name="message" label="Your message" />
       </div>
 
       <button
-        type="button"
+        type="submit"
         className="mt-12 flex items-center space-x-12 bg-white px-6 py-4 font-raleway font-medium text-slate-800"
       >
         <h2>Send message</h2>
         <CgArrowLongRight />
       </button>
-    </form>
+    </FormProvider>
   );
 }
